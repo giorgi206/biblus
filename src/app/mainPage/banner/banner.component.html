@@ -1,0 +1,28 @@
+<div class="banner">
+    <div class="offers">
+        <img src="https://apiv1.biblusi.ge/storage/offers/HHNF7KHBFIdauUhEBBGj0blmHSCioBnc0PbYTJKV.png" alt="">
+        <img src="https://apiv1.biblusi.ge/storage/offers/7Yek1JLoRcCl7pZfI7PkfMzBepv9QBxYYSvO0rNG.png" alt="">
+        <img src="https://apiv1.biblusi.ge/storage/offers/N5bh31k2C2QhSi3ZCKlmr7EyWFZaHPhcJqVUmnAd.png" alt="">
+        <img src="https://apiv1.biblusi.ge/storage/offers/4VcxV71Q3kavW7jUqwoBmvvMyzT63tyz4t8EtPiN.jpg" alt="">
+    </div>
+    <div class="banner-carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button *ngFor="let image of bannerCarousel; let i = index" 
+                    type="button" 
+                    [attr.data-bs-target]="'#carouselExampleIndicators'" 
+                    [attr.data-bs-slide-to]="i" 
+                    [class.active]="i === 0" 
+                    [attr.aria-label]="'Slide ' + (i + 1)">
+            </button>
+          </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" *ngFor="let image of bannerCarousel; let i = index" 
+              class="carousel-item" 
+              [class.active]="i === 0">
+                <img [src]="image.img" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+    </div>
+</div>

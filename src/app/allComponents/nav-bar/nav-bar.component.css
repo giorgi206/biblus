@@ -1,0 +1,133 @@
+nav{
+    width: 100%;
+    height: 164px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 71px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-around;
+    background-color: #fff;
+    z-index: 99999;
+}
+.nav-header{
+    display: flex;
+    width: 100%;
+    height: 73px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-left img{
+    width: 56px;
+    height: 56px;
+}
+.header-left{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.header-right a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #8a8a8a;
+}
+.header-right{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    border: 1px solid #E7E7E8;
+    border-radius: 5px;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.routes img{
+    width: 98px;
+    height: 56px;
+}
+.routes a{
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.routes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-components{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.shearch{
+    position: relative;
+}
+.shearch input{
+    width: 214px;
+    height: 45px;
+    padding: 0 16px;
+    border: 1px solid #C2C2C2;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+}
+.shearch img{
+    position: absolute;
+    top: 24%;
+    right: 3%;
+    width: 17px;
+    height: 23px;
+}
+.shearch input::placeholder{
+    font-size: 16px;
+    color: #757575;
+}
+.cart button{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border: 1px solid #C2C2C2;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cart button:hover{
+    background-color: #e8e8e8;
+    transition: 0.3s;
+}
+.cart img{
+    width: 18px;
+    height: 18px;
+}
+
+.user button{
+    width: 45px;
+    height: 45px;
+    background-color: #084FA2;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.user button:hover{
+    background-color: #094284;
+    transition: 0.3s;
+}
+.user img{
+    width: 18px;
+    height: 18px;
+}

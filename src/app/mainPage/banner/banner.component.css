@@ -1,0 +1,32 @@
+.banner{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.offers{
+    display: flex;
+    flex-direction: column;
+    gap: 16.5px;
+}
+.offers img{
+    width: 222px;
+    height: 85px;
+    border-radius: 15px;
+}
+.banner-carousel {
+    width: 100%;
+    max-width: 1075px;
+    height: 390px;
+}
+
+
+.banner-carousel, .carousel-inner, .carousel-item {
+    width: 100%;
+    height: 390px;
+}
+.carousel-item img {
+    width: 100%;  
+    height: 100%;  
+    object-fit: cover;  
+    border-radius: 10px;  
+}
