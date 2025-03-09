@@ -1,0 +1,84 @@
+.offers-container{
+    width: 100%;
+    height: auto;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    
+}
+.offers{
+    display: flex;
+    flex-direction: column;
+   gap: 40px;
+   padding: 60px 0;
+}
+.offers-components{
+    display: flex;
+    justify-content: space-between;
+}
+.offers-components h1{
+    font-size: 28px;
+}
+.offers-btns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+    position: relative;
+    max-width: 1280px;
+    background: transparent;
+    border-radius: 10px;
+  }
+  
+  .carousel-container {
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+    width: 1280px;
+  }
+  .book-card img {
+    width: 302px;
+    height: 451px;
+  } 
+  .nav-btn {
+    background: transparent;
+    border: 1px solid #DEE2E6;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .slide-btns{
+    display: flex;
+    gap: 10px;
+  }
+  .seeAllBtn button{
+    width: 140px;
+    height: 40px;
+    font-size: 13px;
+    color: black;
+    background-color: #fff;
+    border: 1px solid #DEE2E6;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .info{
+    display: flex;
+    width: 357px;
+    height: 267px;
+    flex-direction: column;
+    margin: 40px;
+    justify-content: space-between;
+  }
+
+ 

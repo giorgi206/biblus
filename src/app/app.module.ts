@@ -8,6 +8,7 @@ import { BannerComponent } from './mainPage/banner/banner.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CategoryComponent } from './mainPage/category/category.component';
 import { BestsellersCarouselComponent } from './mainPage/bestsellers-carousel/bestsellers-carousel.component';
+import { OffersComponent } from './mainPage/offers/offers.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BestsellersCarouselComponent } from './mainPage/bestsellers-carousel/be
     HomePageComponent,
     BannerComponent,
     CategoryComponent,
-    BestsellersCarouselComponent
+    BestsellersCarouselComponent,
+    OffersComponent
   ],
   imports: [
     BrowserModule,
