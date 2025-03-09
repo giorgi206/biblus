@@ -11,9 +11,7 @@ export class BannerComponent {
   bannerCarousel!: Banner[]
   constructor(private _bannerService:BannerService){
     _bannerService.getBannerCarousel().subscribe((data:any) => {
-      this.bannerCarousel = data.slice(0, 10);
-      console.log(this.bannerCarousel);
-      
+      this.bannerCarousel = data.slice(0, 10);  
     })
   }
 }

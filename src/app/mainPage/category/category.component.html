@@ -1,0 +1,8 @@
+<div class="category">
+    <div class="category-cards">
+        <div class="card" *ngFor="let product of category">
+            <img [src]="product.image" alt="">
+            <h6>{{product.name}}</h6>
+        </div>
+    </div>
+</div>
