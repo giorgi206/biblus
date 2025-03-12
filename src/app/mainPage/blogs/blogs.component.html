@@ -1,0 +1,17 @@
+<div class="blog-container">
+    <div class="title">
+        <h1>ბლოგი</h1>
+        <button>მაჩვენე ყველა</button>
+    </div>
+    <div class="blog">
+        <div class="blog-cards" *ngFor="let card of blog">
+            <div class="blog-img">
+                <img [src]="card.image" alt="">
+            </div>
+            <div class="blog-info">
+                <h6>{{card.title}}</h6>
+                <p>{{card.short_text}}</p>
+            </div>
+        </div>
+    </div>
+</div>

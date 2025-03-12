@@ -1,0 +1,32 @@
+<div class="offers-container">
+    <div class="offers">
+        <div class="offers-components">
+            <h1>სიახლე</h1>
+            <div class="offers-btns">
+                <div class="slide-btns">
+                    <button class="nav-btn left" (click)="prev()">❮</button>
+                    <button class="nav-btn right" (click)="next()">❯</button>
+                </div>
+            </div>
+        </div>
+        <div class="offers-carousel">
+            <div class="carousel-container">
+                <div class="book-card" *ngFor="let book of newBooks.slice(currentIndex, currentIndex + visibleCards)">
+                    <div class="book-img">
+                        <img [src]="book.min_picture" alt="Book Cover" />
+                    </div>
+                    <div class="book-info">
+                        <div class="name">
+                            <h3>{{ book.name }}</h3>
+                            <p>{{ book.author?.fullname }}</p>
+                        </div>
+                        <div class="price">
+                            <strong>{{ book.p }} <span>₾</span></strong>
+                            <button><img src="https://zoommer.ge/icons/header-cart.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -9,6 +9,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CategoryComponent } from './mainPage/category/category.component';
 import { BestsellersCarouselComponent } from './mainPage/bestsellers-carousel/bestsellers-carousel.component';
 import { OffersComponent } from './mainPage/offers/offers.component';
+import { NewBooksComponent } from './mainPage/new-books/new-books.component';
+import { TopBooksComponent } from './mainPage/top-books/top-books.component';
+import { BlogsComponent } from './mainPage/blogs/blogs.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { OffersComponent } from './mainPage/offers/offers.component';
     BannerComponent,
     CategoryComponent,
     BestsellersCarouselComponent,
-    OffersComponent
+    OffersComponent,
+    NewBooksComponent,
+    TopBooksComponent,
+    BlogsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,143 @@
+.offers-container{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    
+}
+.offers{
+    display: flex;
+    flex-direction: column;
+   gap: 40px;
+   padding: 60px 0;
+}
+.offers-components{
+    display: flex;
+    justify-content: space-between;
+}
+.offers-components h1{
+    font-size: 28px;
+}
+.offers-btns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+    position: relative;
+    max-width: 1280px;
+    background: transparent;
+    border-radius: 10px;
+  }
+  
+  .carousel-container {
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+    width: 1280px;
+  }
+  .book-card img {
+    width: 100%;
+    height: 353px;
+  } 
+  .book-card{
+    width: 261px;
+    height: 501px;
+  }
+  .nav-btn {
+    background: transparent;
+    border: 1px solid #DEE2E6;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .slide-btns{
+    display: flex;
+    gap: 10px;
+  }
+  .seeAllBtn button{
+    width: 140px;
+    height: 40px;
+    font-size: 13px;
+    color: black;
+    background-color: #fff;
+    border: 1px solid #DEE2E6;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .info{
+    display: flex;
+    width: 357px;
+    height: 267px;
+    flex-direction: column;
+    margin: 40px;
+    justify-content: space-between;
+  }
+  .price button{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border: 1px solid #C2C2C2;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .price button:hover{
+      background-color: #e8e8e8;
+      transition: 0.3s;
+  }
+  .price img{
+    width: 18px;
+    height: 18px;
+  }
+  .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 10px;
+  }
+  .name{
+    height: 45px;
+    width: 151px;
+    overflow: hidden;
+    text-align: start;
+  }
+  .book-info{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .book-card h3 {
+    font-size: 16px;
+    color: black;
+    white-space: nowrap;
+    width: 100%;
+  }
+  
+  .book-card p {
+    font-size: 14px;
+    color: #0C51A3;
+  }
+  
+  .price strong {
+    display: block;
+    color: #084FA2;
+    font-size: 20px;
+  }
+  .price span{
+    color: #D3D8DE;
+    font-size: 20px;
+  }
