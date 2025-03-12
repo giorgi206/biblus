@@ -12,6 +12,9 @@ import { OffersComponent } from './mainPage/offers/offers.component';
 import { NewBooksComponent } from './mainPage/new-books/new-books.component';
 import { TopBooksComponent } from './mainPage/top-books/top-books.component';
 import { BlogsComponent } from './mainPage/blogs/blogs.component';
+import { AuthorssComponent } from './mainPage/authorss/authorss.component';
+import { ReadNowComponent } from './mainPage/read-now/read-now.component';
+import { FooterComponent } from './allComponents/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { BlogsComponent } from './mainPage/blogs/blogs.component';
     OffersComponent,
     NewBooksComponent,
     TopBooksComponent,
-    BlogsComponent
+    BlogsComponent,
+    AuthorssComponent,
+    ReadNowComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
