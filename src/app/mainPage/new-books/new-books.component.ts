@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NewData } from '../../interfaces/new.model';
 import { NewbookService } from '../../services/newbook.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-new-books',
@@ -10,7 +11,7 @@ import { NewbookService } from '../../services/newbook.service';
 export class NewBooksComponent {
   
   newBooks!: NewData[];
-  constructor(private _newBooksService:NewbookService){
+  constructor(private _newBooksService:NewbookService, private route:Router){
     _newBooksService.getNewBooks().subscribe((data) => {
       this.newBooks = data.data
       console.log(this.newBooks);
@@ -18,7 +19,12 @@ export class NewBooksComponent {
       
     })
   }
-  
+  show(book: any){
+    this.route.navigate(
+      ["/routes"],
+      {queryParams: book}
+    )
+  }
   
   
   

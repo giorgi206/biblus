@@ -1,0 +1,22 @@
+.assessment-container{
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.assessment-container h1{
+    font-size: 24px;
+}
+.assessment-container button{
+    width: 203px;
+    height: 49px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #084fa3;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}

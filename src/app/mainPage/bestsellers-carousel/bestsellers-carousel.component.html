@@ -15,7 +15,7 @@
         </div>
         <div class="carousel">
             <div class="carousel-container">
-                <div class="book-card" *ngFor="let book of books.slice(currentIndex, currentIndex + visibleCards)">
+                <div class="book-card" *ngFor="let book of books.slice(currentIndex, currentIndex + visibleCards)" (click)="show(book)">
                     <div class="book-img">
                         <img [src]="book.min_picture" alt="Book Cover" />
                     </div>

@@ -1,6 +1,6 @@
-export interface IBestsellers {
+export interface IInteresting {
     current_page:   number;
-    data:           iData[];
+    data:           InterestData[];
     first_page_url: string;
     from:           number;
     last_page:      number;
@@ -14,9 +14,9 @@ export interface IBestsellers {
     total:          number;
 }
 
-export interface iData {
+export interface InterestData {
     id:            number;
-    url:           null | string;
+    url:           null;
     category_id:   number;
     position:      number;
     cover:         null;
@@ -25,13 +25,13 @@ export interface iData {
     is_bestseller: number;
     is_new:        number;
     name:          string;
-    rate:          number | null;
+    rate:          null;
     p:             number;
     stockOrNot:    number;
     min_picture:   string;
     author:        Author | null;
     category:      Category;
-    rates:         Rate[];
+    rates:         any[];
     deliveries:    any[];
     variations:    VariationElement[];
     wishes:        any[];
@@ -39,7 +39,7 @@ export interface iData {
 
 export interface Author {
     id:                 number;
-    img:                string;
+    img:                null | string;
     best_of_week:       number;
     best_of_week_books: null;
     year_start:         Date | null;
@@ -73,7 +73,7 @@ export interface Category {
     icon:             null;
     created_at:       Date;
     updated_at:       Date;
-    color:            null | string;
+    color:            null;
     image:            null;
     is_main:          number;
     is_book:          number;
@@ -88,70 +88,21 @@ export interface Category {
     banner2_link:     null;
     append_header:    number;
     status:           number;
-    name:             string;
-    description:      string;
+    name:             Name;
+    description:      null;
     translations:     CategoryTranslation[];
+}
+
+export enum Name {
+    TheᲛხატვრული = "მხატვრული",
 }
 
 export interface CategoryTranslation {
     id:          number;
     category_id: number;
     locale:      Locale;
-    name:        string;
-    description: string;
-}
-
-export interface Rate {
-    id:           number;
-    user_id:      number;
-    ratable_type: string;
-    ratable_id:   number;
-    rate:         number;
-    message:      null;
-    created_at:   Date;
-    updated_at:   Date;
-    user:         User;
-    likes:        Like[];
-}
-
-export interface Like {
-    id:         number;
-    user_id:    number;
-    rate_id:    number;
-    action:     Action;
-    created_at: Date;
-    updated_at: Date;
-}
-
-export enum Action {
-    Dislike = "dislike",
-    Like = "like",
-}
-
-export interface User {
-    id:               number;
-    first_name:       string;
-    last_name:        string;
-    email:            string;
-    address:          null;
-    id_number:        null | string;
-    image:            null;
-    type:             string;
-    mobile:           null | string;
-    fb_token:         null;
-    google_token:     null;
-    is_admin:         boolean;
-    created_at:       Date;
-    updated_at:       Date;
-    balance:          number;
-    company_name:     null;
-    company_code:     null;
-    birthday:         null;
-    gender:           null | string;
-    google_user_id:   null | string;
-    facebook_user_id: null;
-    imported:         number;
-    last_login:       Date | null;
+    name:        Name;
+    description: null;
 }
 
 export interface VariationElement {
@@ -166,8 +117,8 @@ export interface VariationElement {
     stock_count_new:       number;
     created_at:            Date;
     updated_at:            Date;
-    start_discount:        Date | null;
-    end_discount:          Date | null;
+    start_discount:        null;
+    end_discount:          null;
     synced_at:             Date;
     discount_only_website: number;
     discount_value:        number;

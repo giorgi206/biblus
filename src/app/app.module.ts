@@ -15,6 +15,12 @@ import { BlogsComponent } from './mainPage/blogs/blogs.component';
 import { AuthorssComponent } from './mainPage/authorss/authorss.component';
 import { ReadNowComponent } from './mainPage/read-now/read-now.component';
 import { FooterComponent } from './allComponents/footer/footer.component';
+import { BookDetailsComponent } from './routes/book-details/book-details.component';
+import { RoutesPageComponent } from './routes/routes-page/routes-page.component';
+import { FormsModule } from '@angular/forms';
+import { AssessmentComponent } from './routes/assessment/assessment.component';
+import { RouteBestSellersComponent } from './routes/route-best-sellers/route-best-sellers.component';
+
 
 @NgModule({
   declarations: [
@@ -30,12 +36,18 @@ import { FooterComponent } from './allComponents/footer/footer.component';
     BlogsComponent,
     AuthorssComponent,
     ReadNowComponent,
-    FooterComponent
+    FooterComponent,
+    BookDetailsComponent,
+    RoutesPageComponent,
+    AssessmentComponent,
+    RouteBestSellersComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
     
   ],
   providers: [],
