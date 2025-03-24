@@ -28,7 +28,27 @@
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMjcyODI5O308L3N0eWxlPjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMS45NiAtMS45NikiPjxwYXRoIGNsYXNzPSJhIiBkPSJNMjEuNjY1LDIwLjI0OGwtMi44MjQtMi44MTRhOS41LDkuNSwwLDEsMC0xLjQwNywxLjQwN2wyLjgxNCwyLjgyNGExLDEsMCwxLDAsMS40MTctMS40MTdaTTQsMTEuNDc4YTcuNDgzLDcuNDgzLDAsMSwxLDcuNDgzLDcuNDgzQTcuNDgzLDcuNDgzLDAsMCwxLDQsMTEuNDc4WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIvPjwvZz48L3N2Zz4=" alt="">
             </div>
             <div class="cart">
-                <button><img src="https://zoommer.ge/icons/header-cart.svg" alt=""></button>
+                <div class="cart-button">
+                    <button (click)="toggleVisibility()"  ><img src="https://zoommer.ge/icons/header-cart.svg" alt=""></button>
+                    <div class="circle" *ngIf="quantity > 0">
+                        <p>{{quantity}}</p>
+                    </div>
+                </div>
+                <div class="cart-items">
+                    <h1 *ngIf="cart.length == 0">კალათა ცარიელია</h1>
+                    <div class="item" *ngFor="let item of cart" >
+                        <img [src]="item.min_picture" alt="">
+                        <div class="name">
+                            <h3>{{item.name}}</h3>
+                            <p>{{item.p}}₾</p>
+                        </div>
+                        <button>X</button>
+                    </div>
+                    <div class="sum" *ngIf="cart.length > 0">
+                        <p>ჯამი</p>
+                        <p>{{totalPrice}}</p>
+                    </div>
+                </div>
             </div>
             <div class="user">
                 <button><img src="https://biblusi.ge/_nuxt/img/user-large-solid.7a17053.png" alt=""></button>

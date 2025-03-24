@@ -19,13 +19,7 @@ export class NewBooksComponent {
       
     })
   }
-  show(book: any){
-    this.route.navigate(
-      ["/routes"],
-      {queryParams: book}
-    )
-  }
-  
+
   
   
   currentIndex = 0;

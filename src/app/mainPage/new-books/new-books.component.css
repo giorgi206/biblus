@@ -46,6 +46,7 @@
   .book-card img {
     width: 100%;
     height: 353px;
+    cursor: pointer;
   } 
   .book-card{
     width: 261px;

@@ -13,17 +13,11 @@ export class RouteBestSellersComponent {
   constructor(private _bestsellers:BestSellersService, private route:Router){
     _bestsellers.getBestsellersCard().subscribe((data) => {
       this.books = data.data;
-      console.log(this.books);
       
     })
   }
   
-  show(book: any){
-    this.route.navigate(
-      ["/routes"],
-      {queryParams: book}
-    )
-  }
+
 
              //carousel
   currentIndex = 0;

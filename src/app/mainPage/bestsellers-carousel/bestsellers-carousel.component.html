@@ -15,8 +15,8 @@
         </div>
         <div class="carousel">
             <div class="carousel-container">
-                <div class="book-card" *ngFor="let book of books.slice(currentIndex, currentIndex + visibleCards)" (click)="show(book)">
-                    <div class="book-img">
+                <div class="book-card" *ngFor="let book of books.slice(currentIndex, currentIndex + visibleCards)" >
+                    <div class="book-img" routerLink="/routes/{{book.id}}">
                         <img [src]="book.min_picture" alt="Book Cover" />
                     </div>
                     <div class="book-info">
@@ -26,7 +26,7 @@
                         </div>
                         <div class="price">
                             <strong>{{ book.p }} <span>₾</span></strong>
-                            <button><img src="https://zoommer.ge/icons/header-cart.svg" alt=""></button>
+                            <button (click)="addToCart(book, 1)"><img src="https://zoommer.ge/icons/header-cart.svg" alt=""></button>
                         </div>
                     </div>
                 </div>

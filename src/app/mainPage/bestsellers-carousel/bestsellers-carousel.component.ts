@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { iData } from '../../interfaces/bestsellers.model';
 import { BestSellersService } from '../../services/best-sellers.service';
 import { Router } from '@angular/router';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-bestsellers-carousel',
@@ -10,20 +11,25 @@ import { Router } from '@angular/router';
 })
 export class BestsellersCarouselComponent {
   books!: iData[];
-  constructor(private _bestsellers:BestSellersService, private route:Router){
+  constructor(private _bestsellers:BestSellersService, private route:Router, private _cartService:CartService){
     _bestsellers.getBestsellersCard().subscribe((data) => {
       this.books = data.data;
       console.log(this.books);
       
     })
   }
-  
-  show(book: any){
-    this.route.navigate(
-      ["/routes"],
-      {queryParams: book}
-    )
+  addToCart(product: iData, quantity: number) {
+
+    this._cartService.addToCart(product, quantity);
   }
+
+  
+  // show(book: any){
+  //   this.route.navigate(
+  //     ["/routes"],
+  //     {queryParams: book}
+  //   )
+  // }
 
              //carousel
   currentIndex = 0;

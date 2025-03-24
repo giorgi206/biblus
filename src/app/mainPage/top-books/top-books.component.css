@@ -80,6 +80,7 @@
 .book-img img{
     width: 170px;
     height: 250px;
+    cursor: pointer;
 }
 .name h3{
     font-size: 14px;

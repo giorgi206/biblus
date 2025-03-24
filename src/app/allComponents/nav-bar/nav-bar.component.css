@@ -133,29 +133,78 @@ nav{
 }
 .cart {
     position: relative;
-    display: inline-block;
 }
 
-.dropdown-menu {
+.cart-items {
     position: absolute;
+    top: 50px; /* ღილაკის ქვემოთ გამოჩნდება */
     right: 0;
-    top: 100%;
+    width: 400px;
     background-color: white;
-    border: 1px solid #ddd;
-    padding: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    min-width: 200px;
-    z-index: 1000;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    visibility: hidden; /* თავიდან დამალული */
+    border: 1px solid #DCDCDC;
+    border-radius: 7px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: none; /* თავიდან დამალული იქნება */
 }
 
-/* როდესაც dropdown აქტიურია */
-.cart .dropdown-menu.show {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
+.cart-items.active {
+    display: block; 
+}
+.item{
+    width: 338px;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item img{
+    width: 74px;
+    height: 100px;
+}
+.name h3{
+    font-size: 14px;
+    height: 100px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 60px;
+    padding-bottom: 35px;
+}
+.name p{
+    font-size: 14px;
+}
+.item button{
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #BDC3CD;
+    font-size: 15px;
+    font-weight: bold;
+}
+.circle{
+    width: 26px;
+    height: 26px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    right: -20%;
+    top: -20%;
+}
+.circle p{
+    color: #fff;
+    font-size: 12px;
+}
+.cart-button{
+    position: relative;
+}
+.cart-items h1{
+    font-size: 14px;
 }

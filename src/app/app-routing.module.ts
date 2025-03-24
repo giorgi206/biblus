@@ -6,7 +6,7 @@ import { RoutesPageComponent } from './routes/routes-page/routes-page.component'
 
 const routes: Routes = [
   {path: "", component: HomePageComponent},
-  {path: "routes", component: RoutesPageComponent}
+  {path: "routes/:id", component: RoutesPageComponent}
 ];
 
 @NgModule({

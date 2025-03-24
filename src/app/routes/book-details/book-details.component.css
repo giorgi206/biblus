@@ -10,8 +10,14 @@
     justify-content: space-between;
     padding: 0 60px;
 }
+
 .book-name h1{
     font-size: 21px;
+}
+.book-name{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .book-left{
     display: flex;
@@ -169,4 +175,14 @@
 .book-btns{
     display: flex;
     gap: 5px;
+}
+.description{
+    width: 486px;
+    height: 300px;
+    overflow: hidden;
+}
+.description p{
+    font-size: 15px;
+    color: #334155;
+    line-height: 30px;
 }

@@ -18,6 +18,9 @@
                     <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAoCAYAAACfKfiZAAAABHNCSVQICAgIfAhkiAAAAh1JREFUWEftWMFVwkAQnQkevGkHclCznMQKxA6wArUCtQKxArECsQLtQKjAeGIhHrQDvKHPZJxJspGsPuQl5OkhuQV25v/9s9k38xGsRylVDwhPEKCFCE37/zzvROARQL+GdKW1fp7NwThfz5bbuHQQTvOALBoTEnT90fDMrE8JbCt1jYBHiyYqso6AemOtjyVHRIDBOwx+biV94fcN+Y0DbkKAXh5QBqhLOTlJGxHXTA7OecEkOig1DwkfuN7rERjRI5ehzYBHhpRZnIeAiYlx4I5J7MQ4MHGQdnF29wz+yuBNOSiZ3xO2RQhIbELCM0rIxtBVqs+V2DNSsyzROSiDgOR13UaXC38Sb4YGTKDBX0jyGgYH4/H4rkwCm0q1aoD3BjNDIADaf9KaFSlPgYpApUClQKVApUClQKVApcD/V+BjOvVWVld3nLgrjvpD6ePztuV2I1sjagI63R9bMobqE2HTtOhFu+BF4jM94SIBy17zHwnQIAyCU9/3vWXvVvLN/QpkUBhp3SoD2OScSyAEOva17v0ZgdnBpCwS30azbVdN0rGZ4Gw0Gqbf6LJJfJvEZTjlIbTHF85hdOEkI7NtoyyDSAJ+a2wfmcTf36Z1tA+FkACkLhJ5AeKkKLjcfIR8uVnuS2pQCEC2LkUhf48Xx8XYALMeUVqK31PkX2G7LRmXTMrhELJLRmzRffk5+eHiSLF9uAR95NLa5+sT4XMZv5c4wwgAAAAASUVORK5CYII=" alt=""></button>
                     <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAkCAYAAAD7PHgWAAAABHNCSVQICAgIfAhkiAAAAwtJREFUWEftWNFx2kAQ3RXM4HzFHUSZiZH4AldgXEHcgUkFtisIqSB2BYYO6MC4AouviJCZKB2Qr5gZ0ObtgUAoQkiET90MaKS72333dlewjykxbNs+rdVq18R8RcRtnRahKbN4obBnrkTBD99/Tu7Nuv/guhcWkS3CLYulpVdmOl3ukSGcDGazWT8IgmncDsdvHMe5Ibbu8zuWQIiGWD/87vv9+L66617jvg0HOCTbeWwaIijsjsfjh2j9GiAMPjJxJ4+htDUw7kk4/6RzbFUfwU7rYFskPRx4aUu/AK4LcJ/jBoWkT2E4CC1rWkE4MGeTCQ0hNPx2B0gTnk3otleJyG/MeYRUCZEqYD9Q2wK78K+Mrwf8fwHILruuayO3XiKjakTCRXsymXi7GNA9cwBGTrVJ6AqAm+mAZQQKBsjZYRVgfN8PdtlEjrYtoUF0eA03cvWcHadxCyNfo43hYn6eBS7NASLQS2GgDwYKpczZ2VnLqlRfYjTeseO6QwTlQh9qWIsa1X2m8k/eKOPvVsZ/zV7/tJIVmScn604DLNLH5Vp5BsAGUmE1hO7G428FqnjjMn5QNTz2/XYeQMk18Yiaqo4DXJBc4v0GRouPYwHUXKwQP0UISoBFY1EyGFXfoUVSMlgyWL4H97x3yiIpi6QskrJIdjBQ/h9c9SSm1Sv6H07XH4vBZAvMdceFnLFsGw9tmo4McN0hogUeadt5j7bzJmLt0L7kGAwmf+bA2INp3IX457qxQycFCeOyaG/8vwC1J4Zk8hRXJZjkfZb00WMoTgj/KEsRiA52CEBDjkhTyOoAGNS0zVhLH9GjNHVgu1hkqFoKQHsLZm/++jqKN+ZZALWxr56cNCsCbYchu6nOs5L20goyXgtb8luaiJRd0RJg3khwMNTZyGxGlkOyq/RmwOCTb0TMRau3AOpDIyapswxRKJ+r/Ku0WlVkghjVS6bTPwCTZjV5qVIxYVFGsuS3fZAi+U0Z13ShxcLbV4x7AaY5XeVUa6PtqbS70Q1jQJCzjJwVzVnvEDHpL0XMjRcawesGAAAAAElFTkSuQmCC" alt="ბოლოს რა წავიკითხე"></button>
                 </div>
+                <div class="description">
+                    <p>{{book.description}}</p>
+                </div>
             </div>
         </div>
         <div class="book-right">
@@ -31,7 +34,7 @@
                 </div>
             </div>
             <div class="book-price">
-                <p>{{book.p}} <span>₾</span> </p>
+                <p>{{book.variations[0].price}} <span>₾</span> </p>
                 <div class="count">
                     <button (click)="minus()" class="minus">-</button>
                     <input [(ngModel)]="counter"  type="text" name="" id="">

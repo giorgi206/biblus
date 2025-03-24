@@ -22,6 +22,7 @@ import { AssessmentComponent } from './routes/assessment/assessment.component';
 import { RouteBestSellersComponent } from './routes/route-best-sellers/route-best-sellers.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +42,7 @@ import { RouteBestSellersComponent } from './routes/route-best-sellers/route-bes
     RoutesPageComponent,
     AssessmentComponent,
     RouteBestSellersComponent,
+
 
   ],
   imports: [
