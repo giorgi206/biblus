@@ -18,7 +18,18 @@
     max-width: 1075px;
     height: 390px;
 }
-
+.carousel-indicators button{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.carousel-indicators .active{
+    background-color: #084fa3;
+    
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
 
 .banner-carousel, .carousel-inner, .carousel-item {
     width: 100%;
@@ -29,4 +40,49 @@
     height: 100%;  
     object-fit: cover;  
     border-radius: 10px;  
+}
+@media (min-width:1780px){
+    .banner-carousel{
+        max-width: 1450px;
+        width: 1433px;
+        height: 520px;
+    }
+    .offers img{
+        width: 297px;
+        height: 115px;
+    }
+    .banner-carousel, .carousel-inner, .carousel-item{
+        height: 100%;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px){
+    .banner{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 6px;
+    }
+    .banner-carousel{
+        height: 520px;
+        
+    }
+    .banner-carousel, .carousel-inner, .carousel-item{
+        height: 100%;
+        width: 100%;
+        padding: 0px 3px;
+    }
+    .offers img{
+            width: 164px;
+            height: 66px;
+    }
+    .offers :nth-child(1) {
+        display: none;
+    }
+    .offers :nth-child(2) {
+        display: none;
+    }
+    .offers{
+        flex-direction: row;
+        margin-top: 10px;
+    }
 }

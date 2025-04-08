@@ -55,3 +55,20 @@
     align-items: flex-start;
     gap: 10px;
 }
+
+@media screen and (max-width: 500px){
+  .product{
+    display: none;
+  }
+  .help{
+    display: none;
+  }
+  .costumer{
+    display: none;
+  }
+ .footer-nav{
+    flex-direction: column;
+    align-items: center;
+ }
+
+}

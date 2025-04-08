@@ -16,7 +16,7 @@ export class AuthorssComponent {
   }
 
   currentIndex = 0;
-  visibleCards = 2; 
+  visibleCards = window.innerWidth < 500 ? 1 : 2; 
 
   next() {
     if (this.currentIndex + this.visibleCards < this.authors.length) {

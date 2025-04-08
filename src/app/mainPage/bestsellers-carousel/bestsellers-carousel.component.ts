@@ -11,12 +11,15 @@ import { CartService } from '../../services/cart.service';
 })
 export class BestsellersCarouselComponent {
   books!: iData[];
+
+
   constructor(private _bestsellers:BestSellersService, private route:Router, private _cartService:CartService){
     _bestsellers.getBestsellersCard().subscribe((data) => {
       this.books = data.data;
       console.log(this.books);
       
-    })
+    });
+    window.addEventListener('resize', this.handleResize.bind(this)); 
   }
   addToCart(product: iData, quantity: number) {
 
@@ -24,17 +27,13 @@ export class BestsellersCarouselComponent {
   }
 
   
-  // show(book: any){
-  //   this.route.navigate(
-  //     ["/routes"],
-  //     {queryParams: book}
-  //   )
-  // }
+
 
              //carousel
   currentIndex = 0;
-  visibleCards = 4; 
+  visibleCards = window.innerWidth < 500 ? 2 : 4; 
 
+  
   next() {
     if (this.currentIndex + this.visibleCards < this.books.length) {
       this.currentIndex++;
@@ -45,5 +44,8 @@ export class BestsellersCarouselComponent {
     if (this.currentIndex > 0) {
       this.currentIndex--;
     }
+  }
+  handleResize() { 
+    this.visibleCards = window.innerWidth < 500 ? 2 : 4;
   }
 }

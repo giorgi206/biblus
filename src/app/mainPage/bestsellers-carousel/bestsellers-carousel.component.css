@@ -4,6 +4,7 @@
     background-color: #272829;
     position: relative;
     margin-top: 20px;
+    padding-bottom: 5px;
 }
 .bestselers-carousel{
     display: flex;
@@ -158,4 +159,74 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  @media (min-width:1780px){
+    .book-card{
+      width: 254px;
+      height: 510px;
+    }
+    .carousel-container {
+      
+      width: 1030px;
+    }
+    .carousel {
+      max-width: 1030px;
+    }
+    .info{
+      width: 500px;
+    }
+    .info p{
+      width: 100%;
+    }
+    .book-img img{
+      height: 378px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .image{
+      display: none;
+    }
+    .bestselers-carousel{
+      flex-direction: column;
+    }
+    .book-card{
+      height: 369px;
+      width: 159px;
+      border-radius: 7px;
+    }
+    .book-card img{
+
+      border-radius:7px 7px 0 0;
+    }
+    .carousel {
+      max-width: 500px;
+    }
+    .info h1{
+      font-size: 20px;
+    }
+    .seeAllBtn{
+      display: none;
+    }
+    .info p{
+      font-size: 12px;
+      width: 100%;
+    }
+    .btns{
+      width: 100%;
+    }
+    .info{
+      width: 100%;
+    }
+    .carousel-container {
+      width: 100%;
+      justify-content: center;
+    }
+    .name h3{
+      font-size: 12px;
+  
+    }
+    .name{
+      width: 100px;
+    }
   }

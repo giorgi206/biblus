@@ -142,3 +142,40 @@
     color: #D3D8DE;
     font-size: 20px;
   }
+
+  @media screen and (max-width: 500px){
+
+    .carousel {
+      max-width: 500px;
+    }
+    .offers-components h1{
+     font-size: 20px;
+    }
+
+    .offers-components{
+      gap: 0;
+
+    }
+    .book-card{
+      height: 369px;
+      width: 159px;
+      border-radius: 7px;
+    }
+    .book-card img{
+      height: 228px;
+      border-radius:7px 7px 0 0;
+    }
+    .carousel-container {
+      width: 100%;
+      justify-content: center;
+    }
+    .name h3{
+      font-size: 12px;
+  
+    }
+    .name{
+      width: 100px;
+    }
+  }
+
+ 

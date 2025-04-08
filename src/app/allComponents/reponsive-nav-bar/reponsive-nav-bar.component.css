@@ -1,0 +1,114 @@
+.nav-top :nth-child(1) img{
+    width: 70px;
+    height: 40px;
+}
+.nav-top img{
+    width: 40px;
+    height: 40px;
+}
+nav{
+    width: 100%;
+    height: 101px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    border: 1px solid #E7E7E8;
+    border-radius: 5px;
+}
+.nav-top{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.nav-bottom{
+    display: flex;
+    gap: 13px;
+    width: 100%;
+    justify-content: space-around;
+}
+.shearch{
+    position: relative;
+    width: 190px;
+}
+.shearch input{
+    width: 190px;
+    height: 45px;
+    padding: 0 16px;
+    border: 1px solid #C2C2C2;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+}
+.shearch img{
+    position: absolute;
+    top: 24%;
+    right: 4%;
+    width: 17px;
+    height: 23px;
+}
+.shearch input::placeholder{
+    font-size: 16px;
+    color: #757575;
+}
+
+.cart button{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #C2C2C2;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cart button:hover{
+    background-color: #e8e8e8;
+    transition: 0.3s;
+}
+.cart img{
+    width: 18px;
+    height: 18px;
+}
+
+.user button{
+    width: 40px;
+    height: 40px;
+    background-color: #084FA2;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.user button:hover{
+    background-color: #094284;
+    transition: 0.3s;
+}
+.user img{
+    width: 18px;
+    height: 18px;
+}
+
+.burger-menu .lin{
+    width: 18px;
+    height: 1px;
+    background-color: #C2C2C2;
+}
+.burger-menu button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #C2C2C2;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}

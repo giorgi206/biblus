@@ -81,4 +81,31 @@
     justify-content: space-between;
   }
 
+
+  @media screen and (max-width: 500px){
+    .book-img img {
+        width: 153px;
+        height: 228px;
+    }
+    .carousel-container {
+      width: 100%;
+      justify-content: center;
+    }
+    .carousel {
+      max-width: 500px;
+    }
+    .offers-components h1{
+     font-size: 20px;
+    }
+    .seeAllBtn button{
+      width: 82px;
+      height: 53px;
+      font-size: 10px;
+    }
+    .offers-components{
+      gap: 0;
+      justify-content: unset;
+    }
+  }
+
  

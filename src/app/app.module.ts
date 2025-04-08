@@ -20,6 +20,7 @@ import { RoutesPageComponent } from './routes/routes-page/routes-page.component'
 import { FormsModule } from '@angular/forms';
 import { AssessmentComponent } from './routes/assessment/assessment.component';
 import { RouteBestSellersComponent } from './routes/route-best-sellers/route-best-sellers.component';
+import { ReponsiveNavBarComponent } from './allComponents/reponsive-nav-bar/reponsive-nav-bar.component';
 
 
 
@@ -42,6 +43,7 @@ import { RouteBestSellersComponent } from './routes/route-best-sellers/route-bes
     RoutesPageComponent,
     AssessmentComponent,
     RouteBestSellersComponent,
+    ReponsiveNavBarComponent,
 
 
   ],

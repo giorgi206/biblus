@@ -23,7 +23,7 @@ export class NewBooksComponent {
   
   
   currentIndex = 0;
-  visibleCards = 5; 
+  visibleCards = window.innerWidth < 500 ? 2 : 5; 
 
   next() {
     if (this.currentIndex + this.visibleCards < this.newBooks.length) {

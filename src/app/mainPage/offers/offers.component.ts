@@ -18,7 +18,7 @@ export class OffersComponent {
   ]
 
   currentIndex = 0;
-  visibleCards = 4; 
+  visibleCards = window.innerWidth < 500 ? 2 : 4; 
 
   next() {
     if (this.currentIndex + this.visibleCards < this.offers.length) {

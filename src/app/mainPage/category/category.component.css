@@ -1,7 +1,8 @@
 .category-cards{
-    width: 1020px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 25px;
     margin-top: 20px;
 }
@@ -25,4 +26,10 @@
     align-items: center;
     justify-content: space-around;
     border: none;
+}
+@media (min-width:1780px){
+    .card{
+        width: 667px;
+        height: 127px;
+    }
 }

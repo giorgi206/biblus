@@ -1,0 +1,12 @@
+.responsive-nav-bar{
+    display: none;
+}
+@media screen and (max-width:500px) {
+    .nav-bar{
+        display: none;
+
+    }
+    .responsive-nav-bar{
+        display: block;
+    }
+}
